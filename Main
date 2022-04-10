@@ -283,4 +283,20 @@ while (i<5) {
 }
 console.log(myArray);
 
+let myArr = [1,2,3,4,5];
+let total = 0;
+for (let i = 0; i<myArr.length; i++) {
+total += myArr[i]
+}
+console.log(total)
+/* we must use 'let' because 'var' cant tell which is global scope, and which is local scope variables.
+for (let i = 1; i<5; i++) {
+console.log(i)
+}
 
+console.log(i)
+*/
+
+// temporary death zone : 'let' makes sure that we must initialize variables first and do the hoisting(?). 'Hoist' means to bring the saved variables in memory to the top.
+console.log(a)
+let a = 5
